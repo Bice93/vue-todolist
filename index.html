@@ -15,7 +15,7 @@
         <div id="root">
             <ul>
                 <li v-for="(element, index) in todos" :class="{ms_item: todos[index].done == true}">
-                    <i class="fa-solid fa-xmark"></i> 
+                    <i class="fa-solid fa-xmark" @click="deleteTodoElement(index)"></i> 
                     {{ todos[index].text }} </li>
             </ul>
         </div>

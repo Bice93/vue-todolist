@@ -12,7 +12,7 @@ const app = new Vue (
                     done: true,
                 },
                 {
-                    text: 'Finire l \'esercizio',
+                    text: 'Finire l\'esercizio',
                     done: false,
                 },
                 {

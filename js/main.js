@@ -1,9 +1,9 @@
-const app = new Vue (
+const app = new Vue(
     {
         el: `#root`,
-        data : {
+        data: {
             newElement: ``,
-            todos : [
+            todos: [
                 {
                     text: 'Fare la spesa',
                     done: false,
@@ -31,16 +31,21 @@ const app = new Vue (
             ],
         },
 
-        methods : {
-           deleteTodoElement : function (currentElement) {
+        methods: {
+            deleteTodoElement: function (currentElement) {
                 this.todos.splice(currentElement, 1);
-                console.log(this.todos)
-           },
+                console.log(this.todos);
+            },
 
-           addNewElement : function (currentNewElement){
-            this.todos.push({text: currentNewElement, done: false});
-            console.log(this.todos)
-           }
+            addNewElement: function (currentNewElement) {
+                if (currentNewElement == ``) {
+
+                } else {
+                    this.todos.push({ text: currentNewElement, done: false });
+                    this.newElement = ``;
+                    console.log(this.todos)
+                };
+            },
         },
     },
 );

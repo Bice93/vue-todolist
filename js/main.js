@@ -31,7 +31,10 @@ const app = new Vue (
         },
 
         methods : {
-           
+           deleteTodoElement : function (currentElement) {
+                this.todos.splice(currentElement, 1);
+                console.log(this.todos)
+           }
         },
     },
 );

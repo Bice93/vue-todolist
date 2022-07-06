@@ -2,6 +2,7 @@ const app = new Vue (
     {
         el: `#root`,
         data : {
+            newElement: ``,
             todos : [
                 {
                     text: 'Fare la spesa',
@@ -34,6 +35,11 @@ const app = new Vue (
            deleteTodoElement : function (currentElement) {
                 this.todos.splice(currentElement, 1);
                 console.log(this.todos)
+           },
+
+           addNewElement : function (currentNewElement){
+            this.todos.push({text: currentNewElement, done: false});
+            console.log(this.todos)
            }
         },
     },

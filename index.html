@@ -19,8 +19,8 @@
                     {{ todos[index].text }} </li>
             </ul>
             <div class="container-input">
-                <input type="text" placeholder="Add elements to the list...">
-                <a href="#"><button>Add New <i class="fa-solid fa-plus"></i></button></a>
+                <input type="text" placeholder="Add elements to the list..." v-model="newElement">
+                <a href="#"><button @click="addNewElement(newElement)">Add New <i class="fa-solid fa-plus"></i></button></a>
             </div>
         </div>
         

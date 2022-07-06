@@ -18,6 +18,10 @@
     list-style: none;
 }
 
+.container ul li{
+    margin: 7px 0;
+}
+
 .ms_item{
     text-decoration:line-through;
 }

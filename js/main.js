@@ -46,6 +46,11 @@ const app = new Vue(
                     console.log(this.todos)
                 };
             },
+
+            changeValueDone : function (value){
+               value = !value;
+               console.log(value)
+            },
         },
     },
 );
